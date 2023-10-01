@@ -1,0 +1,14 @@
+---
+- name: Install OpenJDK 11 JDK
+  hosts: all
+  tasks:
+    - name: Ensure OpenJDK 11 JDK is installed
+      apt:
+        name: openjdk-11-jdk
+        state: present
+
+    # Uncomment the following task if you want to install openjdk-11-jdk-devel as well
+    # - name: Ensure OpenJDK 11 JDK Development package is installed
+    #   apt:
+    #     name: openjdk-11-jdk-devel
+    #     state: present
