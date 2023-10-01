@@ -1,8 +1,8 @@
 
-package "java-1.7.0-openjdk" do
+package "openjdk-11-jdk" do
 action :install
 end
 
-package "java-1.7.0-openjdk-devel" do
+package "openjdk-11-jdk-devel" do
 action :install
 end
